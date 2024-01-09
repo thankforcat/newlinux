@@ -18,3 +18,7 @@ sed -i '/^plugins=/ s/)/ zsh-autosuggestions)/' ~/.zshrc
 echo "Zsh configuration completed. Reloading shell..."
 source ~/.zshrc
 echo "Shell reloaded."
+
+npm i -g pm2
+
+npm i -g pnpm

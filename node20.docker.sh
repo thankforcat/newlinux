@@ -1,7 +1,5 @@
 # 版本 arm64v8/node:20.10.0-bullseye-slim
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
@@ -15,8 +13,7 @@ sed -i '/^plugins=/ s/)/ zsh-autosuggestions)/' ~/.zshrc
 
 # 输出一些信息
 echo "Zsh configuration completed. Reloading shell..."
-source ~/.zshrc
-echo "Shell reloaded."
+source ~/.zshrc && echo "Shell reloaded."
 
 npm i -g pm2
 
